@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
+	attr_accessible :username
 	validates_uniqueness_of :username
-	belongs_to :movie
 end

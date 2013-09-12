@@ -19,10 +19,4 @@ class VideosController < ApplicationController
 		@movie.update_attributes(title: => params[:title], :summary => params[:summary])
 	end
 
-	def create
-		@movie = Movie.new(params[:title, :summary])
-		@movie.save
-		respond_with( @movie )
-	end
-
 end
