@@ -13,10 +13,10 @@ class VideosController < ApplicationController
 		respond_with @movie
 	end
 
-	def update
-		@movie = Movie.find params[:id]
+	#def update
+	#	@movie = Movie.find params[:id]
 		#TODO: validation of params
-		@movie.update_attributes(title: => params[:title], :summary => params[:summary])
-	end
+		#@movie.update_attributes(title: => params[:title], :summary => params[:summary])
+	#end
 
 end
