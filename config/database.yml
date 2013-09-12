@@ -1,0 +1,18 @@
+connection: &connection
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: alaay
+  password: Magicrules1
+
+development:
+  <<: *connection
+  database: dbname_development
+
+test:
+  <<: *connection
+  database: dbname_test
+
+production:
+  <<: *connection
+  database: dbname_production
