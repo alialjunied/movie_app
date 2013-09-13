@@ -20,7 +20,7 @@ $(document).ready(function( ){
 	//---------
 	//COLLECTION
 	var Movies = Backbone.Collection.extend({
-		model : Movie
+		model : Movie //the collection is a collection of the model Movie
 	});
 	var movies = new Movies( );
 
