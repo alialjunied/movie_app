@@ -45,10 +45,11 @@ $(document).ready(function( ){
 			
 			view = new MovieView({ model : model }); //create a MovieView object specifying the model
 
+			e1 = view.render()
 			var img = $('<img/>').attr({ 'src' : model.get('img_url') })
-			$(view.el).append(img);
+			$(e1).append(img);
 
-			$('ul.movies').append(view.render());
+			$('ul.movies').append(e1);
 		}
 	});
 	//----------
